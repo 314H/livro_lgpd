@@ -1,0 +1,351 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ .top72 {
+	top:72;
+	position: unset;}
+ 
+@font-face{ 
+	 font-family: "titulo";
+    /*Caso a fonte esteja dentro de uma pasta*/
+     src: url("/style/fonts/black.ttf");
+ }
+@font-face{ 
+	 font-family: "texto";
+    /*Caso a fonte esteja dentro de uma pasta*/
+     src: url("/style/fonts/regular.ttf");
+ }
+.titulo{
+	font-family: , GoodHeadlinePro, 'GoodHeadlinePro-Black'
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #00B8D4;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    top: 40%;
+  }
+  #index-banner .section {
+    align-content: center;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+.icon-block .material-icons {
+  font-size: inherit;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.counter {
+	font-family: roboto;
+	font-size: 3.2rem;
+  	line-height: 110%;
+}
+
+.counter2 {
+	font-family: roboto;
+	font-size: 2.4rem;
+  	line-height: 110%;
+}
+
+.especialista {
+	font-family: roboto;
+	font-size: 2.6rem;
+  	line-height: 110%;
+  	margin: 2.8rem 0 1.68rem 0;
+}
+
+.roboto {
+	font-family: roboto;
+}
+
+.texto {
+	font-family: 'titulo';
+}
+
+.titulo {
+	font-family: 'texto';
+}
+
+.first {
+	height: 930px;
+}
+
+@media only screen and (min-width: 650px) {
+.first {
+	height: 830px;
+}
+}
+
+.seccond {
+	height: 3300px;
+}
+
+@media only screen and (min-width: 650px) {
+.seccond {
+	height: 2300px;
+}
+}
+
+
+.sevtw {
+	height: 72px;
+}
+
+.m20 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.tp20 {
+	top: 10%;
+}
+
+.bigt {
+	font-size: 3c0px;
+}
+
+
+
+.pd50 {
+	padding: 50px;
+}
+
+.mg150 {
+	margin: 150px;
+}
+
+.spacer {
+	height: 150px;
+}
+
+.spacerh {
+	width: 100px;
+}
+
+.syl {
+	width: 800px;
+}
+
+.spacersmall {
+	height: 75px;
+}
+
+.spacerxsmall {
+	height: 40px;
+}
+
+.spacerxxsmall {
+	height: 20px;
+}
+
+.mg0 {
+	margin: 0px;
+}
+
+
+
+.video-container .vertical {
+  position: absolute;
+  top: 0;
+  left: 0;
+	height: 100%;
+	width: 33.33%;
+}
+
+.ff {
+	width: 65%;
+}
+
+:root {
+  --gutter: 20px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 25px;
+  grid-template-rows: minmax(150px, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: calc(70% - var(--gutter) * 2);
+
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+  content: '';
+  width: 10px;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.hs > li,
+.item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.pbtn {
+  position: relative;
+	 top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.overlay {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.abs {
+	position:relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.pbtn:hover .overlay {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 500px) {
+.hs {
+  grid-auto-columns: calc(50% - var(--gutter) * 2);
+}
+}
+
+@media only screen and (min-width: 1000px) {
+.hs {
+  grid-auto-columns: calc(40% - var(--gutter) * 2);
+}
+}
+
+@media only screen and (min-width: 1400px) {
+.hs {
+  grid-auto-columns: calc(30% - var(--gutter) * 2);
+}
+}
+
+@media only screen and (min-width: 1600px) {
+.hs {
+  grid-auto-columns: calc(20% - var(--gutter) * 2);
+}
+}
+
+@media only screen and (min-width: 600px) {
+	.change-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+}
+
+.m10p {
+	margin-right: 10%;
+}
+
+.wdtshort {
+	width: 50%;
+}
+
+.jtf {
+	text-align: justify;
+}
+
+.pd0 {
+	padding: 0px;
+}
+
+.hand {
+	cursor: pointer;
+}
